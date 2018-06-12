@@ -1,0 +1,21 @@
+package com.market.service.impl;
+
+import com.market.pojo.TbItem;
+import com.market.service.ItemService;
+
+/**
+ * 商品管理Service
+ * @author Administrator
+ *
+ */
+
+@Servic
+public class ItemServiceImpl implements ItemService {
+
+	@Override
+	public TbItem getItemById(long itemId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

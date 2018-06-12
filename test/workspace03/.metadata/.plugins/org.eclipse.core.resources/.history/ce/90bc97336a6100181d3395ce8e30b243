@@ -1,0 +1,8 @@
+
+package ContentCategoryService;
+
+import com.market.pojo.EasyUIDataGridResult;
+
+public interface ContentCategoryService {
+	public abstract EasyUIDataGridResult 
+}

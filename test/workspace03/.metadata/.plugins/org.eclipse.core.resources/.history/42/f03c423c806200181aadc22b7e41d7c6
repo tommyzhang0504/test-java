@@ -1,0 +1,64 @@
+
+package com.market.content.service.impl;
+
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.market.content.service.ContentService;
+import com.market.dao.TbContentDao;
+import com.market.jedis.JedisClient;
+import com.market.pojo.MarketResult;
+import com.market.pojo.TbContent;
+import com.market.pojo.TbContentQuery;
+import com.market.pojo.TbContentQuery.Criteria;
+
+@Service
+public class ContentServiceImpl implements ContentService {
+
+	@Autowired
+	private TbContentDao tbContentDao;
+	@Autowired
+	private JedisClient jedisClient;
+	
+	@Override
+	public MarketResult addContent(TbContent content) {
+		// 补全content pojo属性值
+		content.setUpdated(new Date());
+		content.setCreated(new Date());
+		// 插入数据库
+		tbContentDao.insert(content);
+		return MarketResult.ok();
+	}
+
+	@Override
+	public List<TbContent> getContentListByCid(long cid) {
+		// 先查询缓存，使用try catch保证业务正常
+		try {
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		//缓存中没有命中，再查询数据库
+		TbContentQuery example = new TbContentQuery();
+		Criteria criteria = example.createCriteria();
+		//设置查询条件
+		criteria.andCategoryIdEqualTo(cid);
+		
+		List<TbContent> contentList = tbContentDao.selectByExample(example);
+		System.out.println("Service层：contentlist="+contentList);
+		//把结果添加到缓存,同样不能影响正常逻辑
+		try {
+			jedisClient.hset("contentList", "CID", value)
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		//返回结果		
+		return contentList;
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.market.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+/**
+ * 页面展示Controller
+ * @author Administrator
+ *
+ */
+
+@Controller
+public class PageController {
+	
+	@RequestMapping("/")		//输入域名就可以直接看到首页
+	public String showIndex(){
+		
+		return "index";
+	}
+	
+
+}

@@ -1,0 +1,5 @@
+package com.market.pojo;
+
+public class EasyUITreeNode {
+
+}

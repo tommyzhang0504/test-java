@@ -1,0 +1,25 @@
+
+package com.market.jedis;
+
+import org.junit.Test;
+
+import redis.clients.jedis.Jedis;
+
+public class TestJedis {
+
+	@Test
+	public void testJedis() throws Exception{
+		//创建一个jedis对象，需要指定服务的ip和端口号
+		Jedis jedis = new Jedis("192.168.25.128", 6379);
+		//直接操作数据库
+		jedis.set("key1", "123");
+		System.out.println(jedis.get("key1"));
+		
+		//关闭jedis 
+		jedis.close();
+	}
+	
+	public void testRedisPool() throws Exception{
+		
+	}
+}

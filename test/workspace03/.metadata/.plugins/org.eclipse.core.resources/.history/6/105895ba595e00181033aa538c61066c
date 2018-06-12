@@ -1,0 +1,24 @@
+package com.market.service.impl;
+
+import org.springframework.stereotype.Service;
+
+import com.market.pojo.TbItem;
+import com.market.service.ItemService;
+
+/**
+ * 商品管理Service
+ * @author Administrator
+ *
+ */
+
+@Service
+public class ItemServiceImpl implements ItemService {
+
+	@Autowired
+	@Override
+	public TbItem getItemById(long itemId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

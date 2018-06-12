@@ -1,0 +1,22 @@
+package com.market.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+/**
+ * 页面展示Controller
+ * @author Administrator
+ *
+ */
+
+@Controller
+public class PageController {
+	
+	@RequestMapping("/")		//输入域名就可以直接看到首页
+	public String showIndex(){
+		
+		return "index";
+	}
+	
+	//页面写法类似，这样写一个通用的方法，从请求拿参数，请求什么，就返回对应的什么页面
+}

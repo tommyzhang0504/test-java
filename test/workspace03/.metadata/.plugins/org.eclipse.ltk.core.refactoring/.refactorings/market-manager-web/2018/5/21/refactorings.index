@@ -1,0 +1,35 @@
+1527048692984	Delete element
+1527049123771	Move file
+1527049341850	Move file
+1527050225440	Copy file
+1527050376644	Delete element
+1527050730187	Copy file
+1527052360913	Copy file
+1527052423887	Copy file
+1527052486242	Delete element
+1527052499242	Rename resource 'web2.xml'
+1527052524079	Delete element
+1527052529090	Delete element
+1527052712695	Delete element
+1527054362269	Copy folder
+1527062926573	Extract local variable 'itemById'
+1527066923883	Delete element
+1527066982152	Move folder
+1527067008980	Delete element
+1527067311415	Delete element
+1527067626535	Delete elements
+1527067652923	Delete element
+1527067683445	Delete elements
+1527067796289	Delete elements
+1527098447817	Extract local variable 'itemList'
+1527176767480	Extract local variable 'itemCatList'
+1527302008504	Rename resource 'tracker_server.conf'
+1527302281736	Extract local variable 'connection'
+1527302990587	Extract local variable 'upload_file'
+1527323314755	Extract local variable 'uploadFile'
+1527345426479	Extract local variable 'originalFilename'
+1527345949448	Extract local variable 'uploadFile2'
+1527353030835	Extract local variable 'addItem'
+1527355830456	Copy file
+1527355863573	Copy folder
+1527356026092	Copy folders

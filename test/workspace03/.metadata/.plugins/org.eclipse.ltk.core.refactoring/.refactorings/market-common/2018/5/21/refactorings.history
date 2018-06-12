@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;MarketResult.java&apos; to &apos;market-common/src/main/java/com.market.pojo&apos;&#x0D;&#x0A;- Original project: &apos;market-common&apos;&#x0D;&#x0A;- Destination element: &apos;market-common/src/main/java/com.market.pojo&apos;&#x0D;&#x0A;- Original element: &apos;com.market.utils.MarketResult.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java&lt;com.market.pojo" element1="/src\/main\/java&lt;com.market.utils{MarketResult.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1527350209596" units="1" version="1.0"/>
+</session>

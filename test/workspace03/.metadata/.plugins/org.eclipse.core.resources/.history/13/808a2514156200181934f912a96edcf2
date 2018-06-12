@@ -1,0 +1,13 @@
+
+package com.market.portal.pojo;
+
+public class PortalContentPojo {
+
+	private String srcB;
+	private Integer height;
+	private Integer width;
+	private String src;
+	private Integer widthB;
+	private String href;
+
+}

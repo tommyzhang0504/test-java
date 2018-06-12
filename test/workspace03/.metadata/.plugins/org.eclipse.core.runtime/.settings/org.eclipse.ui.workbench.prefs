@@ -1,0 +1,12 @@
+//org.eclipse.ui.commands/state/org.eclipse.ui.navigator.resources.nested.changeProjectPresentation/org.eclipse.ui.commands.radioState=false
+//org.eclipse.ui.commands/state/org.eclipse.wst.xml.views.XPathView.processor.xpathprocessor/org.eclipse.ui.commands.radioState=xpath10
+ColorsAndFontsPreferencePage.expandedCategories=Torg.eclipse.ui.workbenchMisc
+ColorsAndFontsPreferencePage.selectedElement=Forg.eclipse.jface.bannerfont
+PLUGINS_NOT_ACTIVATED_ON_STARTUP=org.eclipse.m2e.discovery;
+eclipse.preferences.version=1
+org.eclipse.jface.bannerfont=1|Courier New|9.75|1|WINDOWS|1|-13|0|0|0|700|0|0|0|-18|3|2|1|49|Courier New;
+org.eclipse.jface.dialogfont=1|Courier New|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|-18|3|2|1|49|Courier New;
+org.eclipse.jface.headerfont=1|Segoe UI|12.0|1|WINDOWS|1|-16|0|0|0|700|0|0|0|-18|3|2|1|34|Segoe UI;
+org.eclipse.jface.textfont=1|Courier New|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|-18|3|2|1|49|Courier New;
+org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<org.eclipse.ui.commands>\r\n<keyBinding contextId\="org.eclipse.ui.contexts.dialogAndWindow" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="CTRL+SPACE"/>\r\n<keyBinding commandId\="org.eclipse.ui.edit.text.contentAssist.proposals" contextId\="org.eclipse.ui.contexts.dialogAndWindow" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="ALT+/"/>\r\n<keyBinding commandId\="org.eclipse.ui.edit.text.hippieCompletion" contextId\="org.eclipse.ui.textEditorScope" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="ALT+C"/>\r\n<keyBinding contextId\="org.eclipse.ui.textEditorScope" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="ALT+/"/>\r\n<keyBinding commandId\="org.eclipse.ui.edit.text.hippieCompletion" contextId\="org.eclipse.ui.textEditorScope" keyConfigurationId\="org.eclipse.ui.emacsAcceleratorConfiguration" keySequence\="ALT+C"/>\r\n</org.eclipse.ui.commands>
+org.eclipse.ui.workbench.texteditor.blockSelectionModeFont=1|Courier New|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|-18|3|2|1|49|Courier New;

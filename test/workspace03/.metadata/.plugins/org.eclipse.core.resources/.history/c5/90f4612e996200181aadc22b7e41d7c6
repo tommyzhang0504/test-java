@@ -1,0 +1,14 @@
+
+package com.market.pojo;
+
+import java.io.Serializable;
+
+public class SearchItem implements Serializable {
+
+	private String id;
+	private String title;
+	private String
+	private String
+	private String
+	private String
+}

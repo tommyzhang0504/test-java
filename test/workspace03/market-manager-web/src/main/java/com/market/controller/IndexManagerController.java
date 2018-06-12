@@ -1,0 +1,23 @@
+package com.market.controller;
+
+import com.market.pojo.MarketResult;
+import com.market.search.service.SearchItemService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+
+@Controller
+public class IndexManagerController {
+
+    @Autowired
+    private SearchItemService searchItemService;
+
+    @RequestMapping("/index/import")
+    @ResponseBody
+    public MarketResult importIndex(){
+        MarketResult result = searchItemService.importItemsToIndex();
+        return result;
+    }
+}

@@ -1,0 +1,35 @@
+package com.market.portal.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.market.content.service.ContentService;
+import com.market.pojo.TbContent;
+import com.market.portal.pojo.PortalContentPojo;
+
+/**
+ * 首页展示controller
+ * @author Administrator
+ *
+ */
+@Controller
+public class IndexController {
+
+	@Value("{AD1_CATEGORY_ID}")
+	private Long AD1_CATEGORY_ID;
+	private ContentService contentService;
+	@RequestMapping("/index")
+	public String showIndex(){
+		//根据cid查询列表
+		
+		List<TbContent> contentList = contentService.getContentListById(AD1_CATEGORY_ID);
+		List<PortalContentPojo> portalContentList = new PortalContentPojo();
+		for (TbContent tbContent : contentList) {
+			
+		}
+		return "index";
+	}
+}

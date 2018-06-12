@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>market-search-web</display-name>
+	<welcome-file-list>
+		<!-- <welcome-file>index.jsp</welcome-file> -->
+		<welcome-file>index.html</welcome-file>	
+		<!-- 本工程里设置的拦截方式：*.html，修改为index.html，默认进行欢迎页，这时将被拦截 -->
+	</welcome-file-list>
+
+	<!-- 配置post乱码过滤器 -->
+	<filter>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<!-- 前端控制器 -->
+	<servlet>
+		<servlet-name>market-portal-web</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:spring/springMVC.xml</param-value>
+		</init-param>
+		<!-- tomcat启动会就会加载这个servlet，否则在第一次请求加载 -->
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>market-portal-web</servlet-name>
+		<!-- 伪静态化 -->
+		<url-pattern>*.html</url-pattern>
+	</servlet-mapping>
+
+</web-app>

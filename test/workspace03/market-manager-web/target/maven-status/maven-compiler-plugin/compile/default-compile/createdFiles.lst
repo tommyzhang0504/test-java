@@ -1,0 +1,8 @@
+com\market\controller\IndexManagerController.class
+com\market\controller\ContentController.class
+com\market\controller\ContentCatController.class
+com\market\controller\PageController.class
+com\market\controller\ItemController.class
+com\market\utils\FastDFSClient.class
+com\market\controller\ItemCatController.class
+com\market\controller\PictureUploadController.class

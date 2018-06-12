@@ -1,0 +1,16 @@
+package com.market.controller;
+
+import org.springframework.stereotype.Controller;
+
+/**
+ * 页面展示Controller
+ * @author Administrator
+ *
+ */
+
+@Controller
+public class PageController {
+	
+	
+
+}

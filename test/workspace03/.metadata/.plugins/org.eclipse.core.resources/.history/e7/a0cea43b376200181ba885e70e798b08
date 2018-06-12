@@ -1,0 +1,33 @@
+
+package com.market.content.service.test;
+
+import java.util.List;
+
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.market.dao.TbContentDao;
+import com.market.pojo.TbContent;
+import com.market.pojo.TbContentQuery;
+import com.market.pojo.TbContentQuery.Criteria;
+
+public class TestContentService {
+	
+	@Autowired
+	private TbContentDao tbContentDao;
+	
+	
+	@Test
+	public void getContentListById() {
+		 cid = 89;
+		// TODO Auto-generated method stub
+		TbContentQuery example = new TbContentQuery();
+		Criteria criteria = example.createCriteria();
+		criteria.andCategoryIdEqualTo(cid);
+		System.out.println("条件："+criteria);
+		List<TbContent> contentList = tbContentDao.selectByExample(example);
+		System.out.println("Service层：contentlist="+contentList);
+		return contentList;
+	}
+
+}

@@ -1,0 +1,11 @@
+
+package ContentCategoryService;
+
+import java.util.List;
+
+import com.market.pojo.EasyUIDataGridResult;
+import com.market.pojo.EasyUITreeNode;
+
+public interface ContentCategoryService {
+	public abstract List<EasyUITreeNode> getContentCategoryList(long parentId);
+}

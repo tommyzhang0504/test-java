@@ -1,0 +1,15 @@
+
+package com.market.controller;
+
+import org.springframework.stereotype.Controller;
+
+/**
+ * contentCatController
+ * @author Administrator
+ *
+ */
+@Controller
+public class ContentCatController {
+
+	
+}

@@ -1,0 +1,11 @@
+
+package com.market.search.dao;
+
+import java.util.List;
+
+import com.market.pojo.SearchItem;
+
+public interface SearchItemDao {
+
+	public abstract List<SearchItem> 
+}

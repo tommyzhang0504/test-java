@@ -1,0 +1,59 @@
+package com.market.portal.controller;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.market.content.service.ContentService;
+import com.market.pojo.TbContent;
+import com.market.portal.pojo.PortalContentPojo;
+
+/**
+ * 首页展示controller
+ * 
+ * @author Administrator
+ *
+ */
+@Controller
+public class IndexController {
+
+	@Value("${AD1_CATEGORY_ID}")
+	private Long AD1_CATEGORY_ID;
+	@Value("${AD1_WIDTH}")
+	private Integer AD1_WIDTH;
+	@Value("${AD1_WIDTHB}")
+	private Integer AD1_WIDTHB;
+	@Value("${AD1_HEIGHT}")
+	private Integer AD1_HEIGHT;
+	@Value("${AD1_HEIGHTB}")
+	private Integer AD1_HEIGHTB;
+	
+	
+	private ContentService contentService;
+
+	@RequestMapping("/index")
+	public String showIndex() {
+		// 根据cid查询列表,CID固定为大广告位CID
+		List<TbContent> contentList = contentService.getContentListById(AD1_CATEGORY_ID);
+		//把列表转换为PortalContentPojo对象列表 
+		List<PortalContentPojo> portalContentList = new ArrayList<PortalContentPojo>();
+		for (TbContent tbContent : contentList) {
+			PortalContentPojo pcp = new PortalContentPojo();
+			pcp.setAlt(tbContent.getTitle());
+			pcp.setHeight(AD1_HEIGHT);
+			pcp.setHeightB(AD1_HEIGHTB);
+			pcp.setHref(tbContent.getUrl());
+			pcp.setSrc(tbContent.getPic());
+			pcp.setSrcB(tbContent.getPic2());
+			pcp.setWidth(AD1_WIDTH);
+			pcp.setWidthB(AD1_WIDTHB);
+			portalContentList.add(pcp);
+		}
+		//转成json字符串
+		//显示给前台
+		return "index";
+	}
+}

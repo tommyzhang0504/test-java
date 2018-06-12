@@ -1,0 +1,13 @@
+
+package com.market.jedis;
+
+import org.junit.Test;
+
+public class TestJedisSpring {
+
+	@Test
+	public void testJedisSpring() throws Exception{
+		//
+		
+	}
+}

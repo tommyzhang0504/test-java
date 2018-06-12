@@ -1,0 +1,12 @@
+
+package com.market.content.service;
+
+import com.market.pojo.MarketResult;
+import com.market.pojo.TbContent;
+
+public interface ContentService {
+
+	public abstract MarketResult addContent(TbContent content);
+	
+	List
+}

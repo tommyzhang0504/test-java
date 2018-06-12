@@ -1,0 +1,12 @@
+package com.market.controller;
+
+/**
+ * 页面展示Controller
+ * @author Administrator
+ *
+ */
+
+@Controller
+public class PageController {
+
+}

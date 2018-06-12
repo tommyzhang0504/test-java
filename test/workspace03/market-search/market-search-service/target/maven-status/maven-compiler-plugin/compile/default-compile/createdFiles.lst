@@ -1,0 +1,6 @@
+com\market\search\service\impl\SearchItemServiceImpl.class
+com\market\search\dao\SearchDao.class
+com\market\search\listener\ItemAddMessageListener.class
+com\market\search\listener\MyMessageListener.class
+com\market\search\dao\SearchItemDao.class
+com\market\search\service\impl\SearchServiceImpl.class

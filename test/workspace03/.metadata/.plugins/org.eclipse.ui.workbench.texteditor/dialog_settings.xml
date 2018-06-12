@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="339" key="DIALOG_WIDTH"/>
+		<item value="118" key="DIALOG_Y_ORIGIN"/>
+		<item value="388" key="DIALOG_HEIGHT"/>
+		<item value="969" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Courier New|9.75|0|WINDOWS|1|-13|0|0|0|400|0|0|0|-18|3|2|1|49|Courier New" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="activemq.version" key="selection"/>
+		<list key="findhistory">
+			<item value="activemq.version"/>
+			<item value="solrj.version"/>
+			<item value="add"/>
+			<item value="insert"/>
+			<item value="market"/>
+			<item value="taotao"/>
+			<item value="tommy"/>
+			<item value="content-category"/>
+		</list>
+		<list key="replacehistory">
+			<item value="market"/>
+			<item value="market-portal-web"/>
+			<item value="/"/>
+			<item value="com.tommy."/>
+		</list>
+	</section>
+</section>

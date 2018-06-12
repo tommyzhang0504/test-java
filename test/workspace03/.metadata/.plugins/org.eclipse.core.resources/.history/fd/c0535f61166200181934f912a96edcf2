@@ -1,0 +1,14 @@
+
+package com.market.content.service;
+
+import java.util.List;
+
+import com.market.pojo.MarketResult;
+import com.market.pojo.TbContent;
+
+public interface ContentService {
+
+	public abstract MarketResult addContent(TbContent content);
+	
+	public abstract List<TbContent> getContentById(Long cid);
+}

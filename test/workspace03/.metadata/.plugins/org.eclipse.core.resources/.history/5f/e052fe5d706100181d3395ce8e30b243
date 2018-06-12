@@ -1,0 +1,19 @@
+
+package com.market.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+import com.market.content.service.ContentCategoryService;
+
+/**
+ * contentCatController
+ * @author Administrator
+ *
+ */
+@Controller
+public class ContentCatController {
+
+	@Autowired
+	private ContentCategoryService contentCategoryService;
+}

@@ -1,0 +1,6 @@
+package com.market.service;
+
+public interface ItemCatService {
+	getItemCatList(long parentId);
+
+}

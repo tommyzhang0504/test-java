@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=market-content-interface/src\/main\/java&lt;com.market.content.service{ContentService.java[ContentService" modifiers="513" timestamp="1527486293685"/>
+<typeInfo handle="=market-common/C:\/Program Files \(x86)\/Java\/jdk1.7.0_72\/jre\/lib\/rt.jar&lt;java.io(Serializable.class[Serializable" modifiers="1537" timestamp="1521506384515"/>
+<typeInfo handle="=market-content-service/D:\/03Temp\/.m2\/repository\/org\/springframework\/spring-jms\/4.2.4.RELEASE\/spring-jms-4.2.4.RELEASE.jar&lt;org.springframework.jms.core(JmsTemplate.class[JmsTemplate" modifiers="33" timestamp="1463390901321"/>
+<typeInfo handle="=market-manager-service/D:\/03Temp\/.m2\/repository\/org\/apache\/activemq\/activemq-all\/5.11.2\/activemq-all-5.11.2.jar&lt;org.apache.activemq.command(ActiveMQQueue.class[ActiveMQQueue" modifiers="33" timestamp="1463412213137"/>
+</typeInfoHistroy>

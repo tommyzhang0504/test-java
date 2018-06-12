@@ -1,0 +1,7 @@
+
+package com.market.search.dao;
+
+public interface SearchItemDao {
+
+	public abstract 
+}

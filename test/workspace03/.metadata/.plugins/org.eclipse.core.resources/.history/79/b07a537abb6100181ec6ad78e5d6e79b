@@ -1,0 +1,65 @@
+
+package com.market.content.service.impl;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.market.content.service.ContentCategoryService;
+import com.market.dao.TbContentCategoryDao;
+import com.market.pojo.EasyUITreeNode;
+import com.market.pojo.MarketResult;
+import com.market.pojo.TbContentCategory;
+import com.market.pojo.TbContentCategoryQuery;
+import com.market.pojo.TbContentCategoryQuery.Criteria;
+
+@Service
+public class ContentCategoryServiceImpl implements ContentCategoryService {
+
+	@Autowired
+	private TbContentCategoryDao contentCategoryDao;
+
+	@Override
+	public List<EasyUITreeNode> getContentCategoryList(long parentId) {
+		//
+
+		TbContentCategoryQuery example = new TbContentCategoryQuery();
+		Criteria criteria = example.createCriteria();
+		criteria.andParentIdEqualTo(parentId);
+		List<TbContentCategory> list = contentCategoryDao.selectByExample(example);
+		List<EasyUITreeNode> resultList = new ArrayList<EasyUITreeNode>();
+		for (TbContentCategory tbContentCategory : list) {
+			EasyUITreeNode node = new EasyUITreeNode();
+			node.setId(tbContentCategory.getId());
+			node.setState(tbContentCategory.getIsParent() ? "closed" : "open");
+			node.setText(tbContentCategory.getName());
+			resultList.add(node);
+		}
+		return resultList;
+	}
+
+	@Override
+	public MarketResult addContentCat(long parentId, String name) {
+		// 创建一个pojo对象
+		TbContentCategory contentCategory = new TbContentCategory();
+		// 补全这个对象
+		contentCategory.setIsParent(false);
+		contentCategory.setName(name);
+		contentCategory.setParentId(parentId);
+		//
+		contentCategory.setSortOrder(1);
+		//状态。可选值:1(正常),2(删除)
+		contentCategory.setStatus(1);
+		contentCategory.setUpdated(new Date());
+		contentCategory.setCreated(new Date());
+		
+		// 插入数据库中
+		contentCategoryDao.insert(contentCategory)
+		// 返回一个MarketResult结果
+		return null;
+	}
+
+}

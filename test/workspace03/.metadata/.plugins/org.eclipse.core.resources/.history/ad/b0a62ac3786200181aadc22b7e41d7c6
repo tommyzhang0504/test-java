@@ -1,0 +1,17 @@
+
+package com.market.jedis;
+
+import org.junit.Test;
+
+public class TestJedisSpring {
+
+	@Test
+	public void testJedisSpring() throws Exception{
+		//初始化spring容器
+		
+		//从容器中获得jedis对象 
+		
+		//
+		
+	}
+}

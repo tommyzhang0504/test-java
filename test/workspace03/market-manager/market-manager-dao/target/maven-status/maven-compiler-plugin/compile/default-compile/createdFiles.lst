@@ -1,0 +1,11 @@
+com\market\dao\TbItemDao.class
+com\market\dao\TbContentDao.class
+com\market\dao\TbItemParamDao.class
+com\market\dao\TbContentCategoryDao.class
+com\market\dao\TbOrderShippingDao.class
+com\market\dao\TbItemDescDao.class
+com\market\dao\TbOrderDao.class
+com\market\dao\TbItemParamItemDao.class
+com\market\dao\TbItemCatDao.class
+com\market\dao\TbUserDao.class
+com\market\dao\TbOrderItemDao.class

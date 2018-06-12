@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="E:\01Learning Materials\01Java\00JavaLearnNotes\14_SSM\01_逆向工程原版本与升级版本\generatorSqlmap-increase"/>
+			<item value="E:\01Learning Materials\01Java\00JavaLearnNotes\02_FastDFS\bin\fastdfs_client_maven-project"/>
+			<item value="E:\01Learning Materials\01Java\00JavaLearnNotes\14_SSM\generatorSqlMap\generatorSqlmap-increase"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+</section>

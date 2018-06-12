@@ -1,0 +1,9 @@
+
+package com.market.jedis;
+
+public class TestJedisSpring {
+
+	public void testJedisSpring() throws Exception{
+		
+	}
+}

@@ -1,0 +1,7 @@
+package com.market.pojo;
+
+public class EasyUIDataGridResult {
+
+	private Long total;
+	private List rows;
+}

@@ -1,0 +1,6 @@
+package com.market.service;
+
+public interface ItemCatService {
+	List<EasyUITreeNode>getItemCatList(long parentId);
+
+}

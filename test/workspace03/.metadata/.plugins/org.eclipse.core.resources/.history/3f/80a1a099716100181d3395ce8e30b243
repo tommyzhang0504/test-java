@@ -1,0 +1,31 @@
+
+package com.market.controller;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import com.market.content.service.ContentCategoryService;
+import com.market.pojo.EasyUITreeNode;
+
+/**
+ * contentCatController
+ * @author Administrator
+ *
+ */
+@Controller
+public class ContentCatController {
+
+	@Autowired
+	private ContentCategoryService contentCategoryService;
+	
+	@RequestMapping("/content/category/list")
+	@ResponseBody
+	public List<EasyUITreeNode> getContentCategoryList(@RequestParam(defaultValue="0") Long parentId) throws Exception{
+		return contentCategoryService.getContentCategoryList(parentId);
+	}
+}

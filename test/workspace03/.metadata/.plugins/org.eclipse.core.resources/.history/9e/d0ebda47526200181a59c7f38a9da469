@@ -1,0 +1,10 @@
+
+package com.market.jedis;
+
+public class TestJedis {
+
+	@Test
+	public void testJedis(){
+		
+	}
+}

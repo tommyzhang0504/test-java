@@ -1,0 +1,20 @@
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import com.github.pagehelper.PageHelper;
+import com.market.dao.TbItemDao;
+
+public class TestPageHelper {
+
+	public void testPageHelper(){
+		//在mybatis配置文件中配置pagehelper插件
+		//在查询之前设置分页条件
+		PageHelper.startPage(1, 10);
+		//执行查询 
+		ApplicationContext aplicationContext = new ClassPathXmlApplicationContext("classpath:spring/applicationContext-dao.xml");
+		TbItemDao itemDao = aplicationContext.getBean(TbItemDao.class);
+		itemDao.selectByExample(example)
+		
+		
+	}
+}

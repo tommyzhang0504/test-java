@@ -1,0 +1,6 @@
+
+package ContentCategoryService;
+
+public interface ContentCategoryService {
+	
+}

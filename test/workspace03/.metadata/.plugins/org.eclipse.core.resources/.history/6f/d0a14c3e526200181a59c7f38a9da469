@@ -1,0 +1,9 @@
+
+package com.market.jedis;
+
+public class TestJedis {
+
+	public void testJedis(){
+		
+	}
+}

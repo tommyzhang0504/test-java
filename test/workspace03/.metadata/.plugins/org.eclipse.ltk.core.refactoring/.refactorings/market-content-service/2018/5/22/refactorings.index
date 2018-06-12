@@ -1,0 +1,23 @@
+1527396088707	Copy package
+1527396100949	Rename package 'com.market.content.service'
+1527397845436	Extract local variable 'createCriteria'
+1527398147246	Extract local variable 'selectByExample'
+1527432099979	Extract local variable 'ok'
+1527432251741	Extract local variable 'createCriteria'
+1527432661189	Extract local variable 'selectByPrimaryKey'
+1527435256696	Extract local variable 'selectByPrimaryKey'
+1527470788694	Extract local variable 'criteria'
+1527470848891	Extract local variable 'selectByExample'
+1527485454595	Extract local variable 'jsonString'
+1527486219046	Delete element
+1527497597126	Extract local variable 'resource'
+1527497677250	Extract local variable 'string'
+1527499252471	Copy file
+1527513718719	Extract local variable 'bean'
+1527513836612	Extract local variable 'string'
+1527513918676	Move package
+1527513973688	Move compilation unit
+1527515329688	Move compilation unit
+1527517035581	Extract local variable 'hget'
+1527517238972	Extract local variable 'jsonToList'
+1527525916925	Copy elements

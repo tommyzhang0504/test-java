@@ -1,0 +1,6 @@
+
+package com.market.content.service;
+
+public interface ContentService {
+
+}

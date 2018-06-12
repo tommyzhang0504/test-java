@@ -1,0 +1,8 @@
+
+package com.market.pojo;
+
+import java.io.Serializable;
+
+public class SearchItem implements Serializable {
+
+}
