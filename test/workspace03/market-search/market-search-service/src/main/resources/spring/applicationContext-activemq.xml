@@ -34,7 +34,7 @@
 	</bean>
 
 	<!-- 接收方配置messageListener监听器 即message consumer-->
-	<bean id="itemAddMessageListener" class="com.market.search.ItemAddMessageListener" />
+	<bean id="itemAddMessageListener" class="com.market.search.listener.ItemAddMessageListener" />
 
 	<!-- 配置监听容器，将所有connectionFactory, destination, messageListener都配置进来 -->
 	<bean class="org.springframework.jms.listener.DefaultMessageListenerContainer">

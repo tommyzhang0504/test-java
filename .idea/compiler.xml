@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="market-common" />
+        <module name="market-common (1)" />
+        <module name="market-content-interface" />
+        <module name="market-content-service" />
+        <module name="market-item-web" />
+        <module name="market-manager-dao" />
+        <module name="market-manager-dao (1)" />
+        <module name="market-manager-interface" />
+        <module name="market-manager-pojo" />
+        <module name="market-manager-service" />
+        <module name="market-manager-service (1)" />
+        <module name="market-manager-web" />
+        <module name="market-portal-web" />
+        <module name="market-search-interface" />
+        <module name="market-search-service" />
+        <module name="market-search-web" />
+        <module name="market-sso-interface" />
+        <module name="market-sso-service" />
+        <module name="market-sso-web" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="market-common (2)" target="1.7" />
+      <module name="market-common (3)" target="1.7" />
+      <module name="maven-archiver" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

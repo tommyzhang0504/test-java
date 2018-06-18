@@ -30,7 +30,7 @@
 	</bean>
 
 	<!-- 引用dubbo服务 -->
-	<dubbo:application name="market-manager-web"/>
+	<dubbo:application name="market-item-web"/>
 	<dubbo:registry protocol="zookeeper" address="192.168.25.129:2181" />
 	<dubbo:reference interface="com.market.service.ItemService" id="itemService" />
 

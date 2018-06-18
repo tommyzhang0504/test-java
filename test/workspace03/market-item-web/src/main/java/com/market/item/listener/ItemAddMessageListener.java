@@ -36,8 +36,8 @@ public class ItemAddMessageListener implements MessageListener {
             //通过itemId查询数据，取商品信息,查询之前，先等待一秒时间，保证事务提交成功
             Thread.sleep(1000);
             TbItem tbItem = itemService.getItemById(itemId);
-            TbItemDesc tbItemDesc = itemService.getItemDescById(itemId);
             Item item = new Item(tbItem);
+            TbItemDesc tbItemDesc = itemService.getItemDescById(itemId);
 
             //使用freemarker生成静态页面
             //1.创建模板-改造原来的jsp文件成ftl文件

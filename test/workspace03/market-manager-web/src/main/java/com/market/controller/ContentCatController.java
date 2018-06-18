@@ -20,7 +20,6 @@ import com.market.pojo.MarketResult;
  */
 @Controller
 public class ContentCatController {
-	//TODO TODAY
 
 	@Autowired
 	private ContentCategoryService contentCategoryService;
