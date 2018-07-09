@@ -10,7 +10,7 @@ public class MethodDemo {
 
     public static void main(String[] args) {
         int square = square(5, 6);
-        System.out.println(square);
+        System.out.println("面积是："+square);
 
     }
 
