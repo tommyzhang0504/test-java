@@ -4,8 +4,8 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/test/workspace03/market-content/market-content-service" />
     <file type="web" url="file://$PROJECT_DIR$/test/workspace03/market-item-web" />
-    <file type="web" url="file://$PROJECT_DIR$/test/workspace03/market-manager-web" />
     <file type="web" url="file://$PROJECT_DIR$/test/workspace03/market-manager/market-manager-service" />
+    <file type="web" url="file://$PROJECT_DIR$/test/workspace03/market-parent/market-manager-web" />
     <file type="web" url="file://$PROJECT_DIR$/test/workspace03/market-portal-web" />
     <file type="web" url="file://$PROJECT_DIR$/test/workspace03/market-search-web" />
     <file type="web" url="file://$PROJECT_DIR$/test/workspace03/market-search/market-search-service" />
@@ -16,7 +16,6 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/test/workspace03/market-item-web/pom.xml" />
-        <option value="$PROJECT_DIR$/test/workspace03/market-common/pom.xml" />
         <option value="$PROJECT_DIR$/test/workspace03/market-content/pom.xml" />
         <option value="$PROJECT_DIR$/test/workspace03/market-manager/pom.xml" />
         <option value="$PROJECT_DIR$/test/workspace03/market-manager-web/pom.xml" />
@@ -25,7 +24,20 @@
         <option value="$PROJECT_DIR$/test/workspace03/market-search/pom.xml" />
         <option value="$PROJECT_DIR$/test/workspace03/market-search-web/pom.xml" />
         <option value="$PROJECT_DIR$/test/workspace03/market-sso/pom.xml" />
+        <option value="$PROJECT_DIR$/test/workspace03/market-common/pom.xml" />
+        <option value="$PROJECT_DIR$/test/workspace03/market-manager/market-manager-dao/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/test/workspace03/market-manager/market-manager-pojo/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/test/workspace03/market-manager/market-manager-service/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/test/workspace03/market-manager/market-manager-interface/target/maven-archiver/pom.properties" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/test/workspace03/market-manager/market-manager-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/test/workspace03/market-manager/market-manager-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/test/workspace03/market-manager/market-manager-pojo/pom.xml" />
+        <option value="$PROJECT_DIR$/test/workspace03/market-manager/market-manager-service/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" project-jdk-name="1.7" project-jdk-type="JavaSDK">
